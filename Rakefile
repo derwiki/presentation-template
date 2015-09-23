@@ -36,7 +36,7 @@ task :publish => OUT_FILES do
   FileUtils.cp_r(base + 'assets', build)
   FileUtils.cp_r(base + 'reveal', build)
   FileUtils.cp_r(base + 'highlight', build)
-  FileUtils.cp(base + 'causes.css', build)
+  FileUtils.cp(base + 'presentation.css', build)
   FileUtils.cp(base + HTML_OUT, build)
   FileUtils.rm_rf(base + 'highlight')
   FileUtils.rm_rf(base + 'reveal')
